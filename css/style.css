@@ -1,0 +1,81 @@
+:root {
+    /* Colors */
+
+    /* Primary */
+    --Green: hsl(75, 94%, 57%);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+
+    /* Font */
+    --PrimaryFont: "Inter", sans-serif;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* Globals */
+body {
+    background-color: var(--Off-Black);
+    font-family: var(--PrimaryFont);
+}
+h1 {
+    font-size: 2.4rem;
+    color: var(--White);
+}
+p {
+    font-size: 1.6remrem;
+    color: white;
+}
+a {
+    text-decoration: none;
+    font-family: var(--PrimaryFont);
+    color: var(--White);
+}
+
+.conteiner {
+    max-width: 25rem;
+    margin: 6rem auto;
+    padding: 2rem;
+    background-color: var(--Dark-Grey);
+    border-radius: 1rem;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.information img {
+    border-radius: 50%;
+    margin: 1rem;
+}
+.information h1, p{
+    margin: 0.5rem;
+}
+.information p{
+    color: var(--Green);
+}
+.links {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links a {
+    background-color: var(--Grey);
+    padding: 1rem;
+    margin: 1rem;
+    width: 95%;
+    border-radius: 1rem;
+}
+.links a:hover {
+    background-color: var(--Off-Black);
+}
